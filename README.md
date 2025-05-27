@@ -4,7 +4,7 @@
 This report aims to identify the most suitable classification method for predicting heart disease status. To achieve this objective, multiple classification models will be evaluated and the best classifier will be proposed based on the goodness of fit of each model. 
 
 ### Dataset
-The dataset contains 300 observations with 12 feature variables and the heart disease status as the response variable.
+The dataset used is attached, named "heart-disease-status.csv" and contains 300 observations with 12 feature variables and the heart disease status as the response variable.
 
 ### Plan of Analysis
 The analysis will follow a structured flow, including:
