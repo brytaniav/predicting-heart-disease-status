@@ -16,20 +16,20 @@ This task is a binary classification problem, where the response variable (e.g. 
 The dataset used is attached, named `heart-disease-status.csv` and consists of **300 observations** (rows), each representing an individual patient's record. Each observation includes **12 input features** (independent variables) related to demographic and clinical health information, along with the response variable that indicates the presence or absence of heart disease.
 
 ##### Variables
-|      Variable        |            Description         | Type of variables |
-|----------------------|--------------------------------|-------------------|
-|`age`                 |age of the patient in years     |      Numerical    |
-|`sex`                 |
-|`chest pain`          |
-|`blood pressure (bp)` |
-|`cholesterol (chol)`  |
-|`fbs`                 |
-|`rest.ecg`            |
-|`heart rate`          |
-|`angina`              |
-|`st. depression`      |
-|`vessels`             |
-|`blood disorder`      |
+|      Variable        | Type of Variable |                                             Notes                                             |
+|----------------------|------------------|-----------------------------------------------------------------------------------------------|
+|`age`                 |   Quantitative   | -                                                                                             |
+|`sex`                 |   Categorical    | 1 = male, 0 = female                                                                          |
+|`chest pain`          |   Categorical    | 0 = typical angina, 1 = atypical angina, 2 = non-anginal pain, 3 = asymptomatic               |
+|`blood pressure (bp)` |   Quantitative   | The patient’s resting blood pressure measured in mmHg upon admission                          |
+|`cholesterol (chol)`  |   Quantitative   | Patient’s serum cholesterol level in mg/dl                                                    |
+|`fbs`                 |   Categorical    | Fasting blood sugar lever greater than 120 mg/dl, 1 = true, 0 = false                         |
+|`rest.ecg`            |   Categorical    | 0 = normal, 1 = ST-T wave abnormality, 2 = possible or definite left ventricular hypertrophy  |
+|`heart rate`          |   Quantitative   | Highest heart rate during exercise testing                                                    |
+|`angina`              |   Categorical    | Patient’s experience of angina induced by exercise, 1 = no, 0 = yes                           |
+|`st. depression`      |   Quantitative   | Observed in ecg during exercise relative to rest, measured in mm                              |
+|`vessels`             |   Categorical    | Number of major vessels (from 0 to 4) visible                                                 |
+|`blood disorder`      |   Categorical    | 1 = normal, 2 = fixed defect, 3 -= reversible defect, 0 = missing value                       |
 
 ##### Response Variable
 `1` indicates the presence of heart disease and `0` indicates the absence of heart disease.
