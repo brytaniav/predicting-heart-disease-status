@@ -36,20 +36,27 @@ The dataset used is attached, named `heart-disease-status.csv` and consists of *
 
 ### Plan of Analysis
 The analysis will follow a structured and systematic flow ro ensure comprehensive exploration, modeling, and evaluation of the dataset, including:
-1. **Exploratory data analysis (EDA)**
+1. **Exploratory Data Analysis (EDA)**
+
    Exploring the variables and examining the associations between the response variable and each input variable.
-2. **Implementation of methods**:
+   
+3. **Implementation of methods**:
    - **K-Nearest Neighbors (KNN)**: A simple, instance-based learning method that classifies a sample based on the majority vote of its neighbors.
    - **Decision Tree**: A tree-structured model that splits features to create decision paths. It is highly interpretable and captures non-linear relationships.
    - **Logistic Regression**: A linear model used as a baseline classifier. It predicts the probability of heart disease _(response variable = 1)_ using a logistic function.
+   
    Each model is trained using the same train-test split and evaluated on the test set for fair comparison.
-3. **Evaluation and comparison of classifiers**
+   
+5. **Evaluation and comparison of classifiers**
    To assess the performance of the models, we use a variety of evaluation metrics, particularly those that are crucial in medical diagnostics.
-   - True Positive Rate (TPR)
-   - Precision
-   - ROC Curve
-   - AUC Value (Area Under the Curve)
+   - **True Positive Rate (TPR) / Sensitivity**: as a measurement on how well the model predicts actual cases of heart disease.
+   - **Precision**: to measure the proportion of predicted positive cases that are actually positive.
+   - **ROC Curve**: visual representation of the trade-off between sensitivity and specificity. 
+   - **AUC Value (Area Under the Curve)**: summary of model performance across all classification threshold, higher AUC value means better model.
+   
    The performance of all models will be compiled into a comparison table and ROC curves will be plotted to visually assess and compare their effectiveness.
 
 ### Conclusion
-Based on comparisons of the TPR, precision, and AUC values, the best classifier for predicting heart disease status is the decision tree. This is because the decision tree has the highest TPR and precision values compared to the other two models (KNN and logistic regression), indicating that the decision tree model predicts the response variable more effectively and demonstrates strong model performance.
+Based on the comparison of the True Positive Rate (TPR), Precision, and AUC values across the three classifiers, the **Decision Tree** tends to be the most effective model for predicting heart disease status. It has the highest TPR and Precision, which indicates a strong performance in identifying true positive cases and minimizing false positives.
+
+While the Logistic Regression model has the highest AUC value (which indicates that this model is stronger in overall classification capability), the Decision Tree model still more reliable in a medical context where correctness in identifying positive cases is very crucial. Thus, the Decision Tree model demonstrates the best balance between sensitivity and precision, making it the most suitable choice for this task.
